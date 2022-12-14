@@ -8,6 +8,10 @@ h1{
  font-size: 60px;
 }
 
+nav{
+ color: white;
+ }
+ 
 .center{
  display: block;
  margin-left: auto;
