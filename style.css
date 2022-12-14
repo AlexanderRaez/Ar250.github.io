@@ -23,13 +23,13 @@ h1{
 }
  
  .navbar a:hover{
-  background-color: yellow;
+  background-color: red;
   color: blue;
  }
  
  .navbar a.active{
   background-color: red;
-  color: blue:
+  color: white:
  }
  
 .center{
