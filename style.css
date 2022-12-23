@@ -8,6 +8,11 @@ h1{
  font-size: 60px;
 }
 
+div.gallery {
+ margin: 5px;
+ float: left;
+}
+
 .navbar{
  background-color: brown;
  overflow: hidden;
