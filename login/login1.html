@@ -8,8 +8,15 @@
 
 <body>
 
-<form action="action.php" method="post">
+<h2>Login</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+
+<form class="modal-content animate" action="action.php" method="post">
   <div class="imgcont">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     <img src=" IMAGE " class="avatar">
   </div>
   
@@ -28,10 +35,20 @@
   </div>
   
   <div class="container" style="background-color: blue">
-    <button type="button" <a href="index.html" class="cancelbutton">Cancel</a></button>
-    <span class="pword">Forgot Password<a href="index.html"</a></span>
+    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbutton">Cancel</button>
+    <span class="pword">Forgot <a href="#">password?</a></span>
   </div>
 </form>
+</div>
 
+<script>
+  var modal = document.getElementById('id01');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      }
+    }
+  </script>
+  
 </body>
 </html>
