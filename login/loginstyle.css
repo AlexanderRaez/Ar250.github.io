@@ -37,7 +37,8 @@ button:hover {
   background-color: red;
 }
 
-.imgcontainer {
+/*centres the image being displayed*/
+.imgcont {
   text-align: center;
   margin: 24px 0 12px 0;
 }
@@ -51,17 +52,57 @@ img.avatar {
   padding: 16px;
 }
 
-span.password {
+/*sets forget password text*/
+span.pword {
   float: right;
   padding-top: 16px;
 }
 
-@media screen and ( max-width: 300px) {
-  span.password {
-    display: block;
-    float: none;
-  }
-  .cancelbutton {
-    width: 100%;
-  }
+
+
+/*MODAL BACKGROUND*/
+
+/*rgba - the a value changes how opaque the colour is*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
 }
+
+/* modal content box */
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;   /*this is 1 of 50 shades of grey*/
+  width: 80%;
+}
+
+/* close button style */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;    /*this is black*/
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+  
+  
+  
