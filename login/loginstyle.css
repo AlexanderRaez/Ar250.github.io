@@ -31,7 +31,7 @@ button:hover {
 }
 
 /*substyle for cancel button*/
-.cancelbutton {
+.cancelbtn {
   width: auto;
   padding: 10px 18px;
   background-color: red;
@@ -101,6 +101,42 @@ span.pword {
   color: red;
   cursor: pointer;
 }
+
+/*zoom animation */
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+  to {
+    webkit-trasnform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+@media screen and (max-width: 300px) {
+  span.pword {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width 100%;
+  }
+}
+    
 
 
   
