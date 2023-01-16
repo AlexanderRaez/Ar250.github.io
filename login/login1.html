@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, inital-scale=1">
-
+ <style>
   <link rel="stylesheet" href="loginstyle.css">
-  </head>
+ </style>
+</head>
 
 <body>
 
@@ -14,31 +14,28 @@
 
 <div id="id01" class="modal">
 
-<form class="modal-content animate" action="action.php" method="post">
+ <form class="modal-content animate" action="action.php" method="post">
   <div class="imgcont">
     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-    <img src=" IMAGE " class="avatar">
+    <img src=" https://user-images.githubusercontent.com/91124825/212690591-202a959e-1f73-4e5e-976c-c7eb2b6d030e.jpg " class="avatar">
   </div>
   
   <div class="container">
-    <label for="username"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="username" required>
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
     
-    <label for="pword"><b>Password</b></label>
+    <label><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="pword" required>
     
     <button type="submit">Login</button>
-    
-    <label>
-      <input type="checkbox" checked="checked" name="remember">Remember me
-    </label>
-  </div>
+    <input type="checkbox" checked="checked" > Remember me
+   </div>
   
   <div class="container" style="background-color: blue">
-    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbutton">Cancel</button>
+    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
     <span class="pword">Forgot <a href="#">password?</a></span>
   </div>
-</form>
+ </form>
 </div>
 
 <script>
